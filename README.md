@@ -49,4 +49,48 @@ pinMode(sensor,INPUT);		// mengatur mode sensor asap
 Serial.begin(9600);
 lcd.begin(16,2);
 }
+
+
 ```
+Kemudian pada fungsi Loop adalah seperti berikut. kita buat value dari variabel analogValue adalah hasil input dari sensor. lalu kita buat permisalan jika analog value melewati 
+Pembatas maka LED warna merah akan menyala dan LED hijau menjadi redup. Buzzer akan menyala dan tampilan LCD akan menampilkan "GAS TERDETEKSI" dan "BAHAYA". jika tidak melewati maka
+LED hijau menyala dengan terang dan buzzer tidak akan berbunyi.
+
+```C
+void loop()
+{
+int analogValue= analogRead(sensor);
+Serial.print(analogValue);
+Serial.print("\n");
+if(analogValue>sensorThresh) // jika value analog melebihi batasan 
+{
+  
+digitalWrite(redled,HIGH);	//menyalakan led merah
+digitalWrite(greenled,LOW); // mematikan led hijau
+tone(buzzer,1000,10000);	//membunyikan buzzer
+lcd.clear();				//
+lcd.setCursor(0,1);
+lcd.print("GAS TERDETEKSI");
+delay(1000);
+lcd.clear();
+lcd.setCursor(0,1);
+lcd.print("BAHAYA");
+delay(1000);
+}
+else
+{
+digitalWrite(greenled,HIGH);
+digitalWrite(redled,LOW);
+noTone(buzzer);
+lcd.clear();
+lcd.setCursor(0,0);
+lcd.print("Aman");
+delay(1000);
+lcd.clear();
+lcd.setCursor(0,1);
+lcd.print("tidak ada gas");
+delay(1000);
+}
+}
+``
+
