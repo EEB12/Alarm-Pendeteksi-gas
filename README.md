@@ -9,3 +9,15 @@ cara kerja dari sensor gasnya adalah ketika oksigen tertangkap oleh sensor terse
 gas yang mudah terbakar maka oksigen tersebut akan tertarik dan elektron akan terlepas ke timah dioksida
 
 ![alt text](https://lastminuteengineers.com/wp-content/uploads/arduino/MQ2-Gas-Sensor-Working.gif?raw=true "Ilustrasi" )
+
+## Komponen
+
+* Arduino Uno R3
+* LCD 16 X 2
+* Sensor gas MQ-9
+* Piezo
+* Resistor 4.7KΩ
+* Resistor 1 KΩ
+* Resistor 100 Ω
+* LED merah
+* LED hijau
