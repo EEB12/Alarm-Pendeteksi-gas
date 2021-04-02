@@ -36,3 +36,17 @@ int buzzer=4;	// pin output untuk buzzer
 int sensor= A0;	// pin input untuk sensor
 int sensorThresh=380; // batasan untuk sensor
 ```
+
+Kemudian kita setup mode untuk tiap komponen yang sudah diinisiasi diatas.
+
+```C
+void setup()
+{
+pinMode(redled,OUTPUT);		//mengatur mode led merah
+pinMode(greenled,OUTPUT);	//mengatur mode led hijau
+pinMode(buzzer,OUTPUT);		// mengatur mode buzzer
+pinMode(sensor,INPUT);		// mengatur mode sensor asap
+Serial.begin(9600);
+lcd.begin(16,2);
+}
+```
