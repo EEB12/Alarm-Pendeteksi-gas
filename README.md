@@ -21,3 +21,6 @@ gas yang mudah terbakar maka oksigen tersebut akan tertarik dan elektron akan te
 * Resistor 100 Ω
 * LED merah
 * LED hijau
+
+## Source Code
+pada tahapan implementasi dibutuhkan  ``#include <LiquidCrystal.h>``
