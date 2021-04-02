@@ -37,7 +37,7 @@ int sensor= A0;	// pin input untuk sensor
 int sensorThresh=380; // batasan untuk sensor
 ```
 
-Kemudian kita setup mode untuk tiap komponen yang sudah diinisiasi diatas.
+Kemudian kita setup mode untuk tiap komponen yang sudah diinisiasi diatas. untuk lampu LED dan buzzer dijadikan sebagai output sedangkan untuk sensor kita buat sebagai input.
 
 ```C
 void setup()
