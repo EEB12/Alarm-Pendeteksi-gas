@@ -34,7 +34,7 @@ int redled=3;	//pin output untuk led merah
 int greenled=2;	// pin output untuk led hijau
 int buzzer=4;	// pin output untuk buzzer
 int sensor= A0;	// pin input untuk sensor
-int sensorThresh=380; // batasan untuk sensor
+int Pembatas=380; // batasan untuk sensor
 ```
 
 Kemudian kita setup mode untuk tiap komponen yang sudah diinisiasi diatas. untuk lampu LED dan buzzer dijadikan sebagai output sedangkan untuk sensor kita buat sebagai input.
