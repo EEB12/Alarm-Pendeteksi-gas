@@ -23,4 +23,16 @@ gas yang mudah terbakar maka oksigen tersebut akan tertarik dan elektron akan te
 * LED hijau
 
 ## Source Code
-pada tahapan implementasi dibutuhkan  ``#include <LiquidCrystal.h>``
+pada tahapan implementasi dibutuhkan  ``#include <LiquidCrystal.h>`` untuk Layar LCD. lalu untuk menginisiasi LCD menggunakan
+``LiquidCrystal lcd(5,6,8,9,10,11);``. Setelah menginisiasi LCD selanjutnya adalah menginisiasi untuk komponen lain
+
+```C
+#include <LiquidCrystal.h>
+LiquidCrystal lcd(5,6,8,9,10,11); // menginisiasi pin berapa aja untuk lcd
+
+int redled=3;	//pin output untuk led merah
+int greenled=2;	// pin output untuk led hijau
+int buzzer=4;	// pin output untuk buzzer
+int sensor= A0;	// pin input untuk sensor
+int sensorThresh=380; // batasan untuk sensor
+```
