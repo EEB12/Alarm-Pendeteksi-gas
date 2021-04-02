@@ -94,3 +94,5 @@ delay(1000);
 }
 ```
 
+[Link Tinkercad](https://www.tinkercad.com/things/4neNcHm7LTy-pendeteksi-asap/editel?sharecode=8olpsVeqWg94zgOUHb3JyAm8-A8-Sl268lK8Mou3fX4)
+
